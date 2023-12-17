@@ -659,15 +659,36 @@ progress {
   margin-left: auto;
 }
 
+/* Market Styles I Added Start Here */
+#support-area-bg{
+  height:140% !important;
+  background-image:url('../images/market/bg.jpg');
+  background-size:cover;
+}
+
+.white-text{color:#fff;}
+
+.pt-900 {
+  padding-top: 2 rem !important;
+}
+.mt-900{
+  margin-top: 100px !important;
+}
+
 @media (min-width: 576px) {
   .container, .container-sm {
     max-width: 540px;
   }
+
+  
 }
 
 @media (min-width: 768px) {
   .container, .container-sm, .container-md {
     max-width: 720px;
+  }
+  #support-area-bg{
+    height:130% !important;
   }
 }
 
@@ -675,6 +696,7 @@ progress {
   .container, .container-sm, .container-md, .container-lg {
     max-width: 960px;
   }
+  
 }
 
 @media (min-width: 1200px) {
@@ -4454,6 +4476,10 @@ fieldset:disabled .btn {
     right: 0;
     left: auto;
   }
+  
+#support-area-bg{
+  height:85% !important;
+}
 }
 
 @media (min-width: 1600px) {
@@ -4471,6 +4497,9 @@ fieldset:disabled .btn {
     right: 0;
     left: auto;
   }
+  #support-area-bg{
+  height:57% !important;
+}
 }
 
 .dropup .dropdown-menu[data-bs-popper] {
@@ -5250,6 +5279,9 @@ fieldset:disabled .btn {
   }
   .navbar-expand-xxl .navbar-toggler {
     display: none;
+  }
+  #support-area-bg{
+    height:10vh !important;
   }
 }
 
@@ -6243,6 +6275,9 @@ fieldset:disabled .btn {
 }
 
 @media (min-width: 992px) {
+  #support-area-bg{
+    height:85% !important;
+  }
   .list-group-horizontal-lg {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
