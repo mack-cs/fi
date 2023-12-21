@@ -661,7 +661,7 @@ progress {
 
 /* Market Styles I Added Start Here */
 #support-area-bg{
-  height:140% !important;
+  height:900px !important;
   background-image:url('../images/market/bg.jpg');
   background-size:cover;
 }
@@ -688,7 +688,7 @@ progress {
     max-width: 720px;
   }
   #support-area-bg{
-    height:130% !important;
+    max-height:920px !important;
   }
 }
 
@@ -1346,6 +1346,18 @@ progress {
 .g-10,
 .gy-10 {
   --bs-gutter-y: 50px;
+}
+.tiktoklogo {
+  font-size: 100px;
+  position: relative;
+  color: #00fff8;
+}
+.tiktoklogo i:last-child {
+  mix-blend-mode: multiply;
+  color: #ff0010;
+  position: absolute;
+  left: 5px;
+  top: 7px;
 }
 
 @media (min-width: 576px) {
@@ -3102,7 +3114,22 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
+/* Survey Lists Styles */
+.custom-list {
+  list-style-type: none; /* Remove default list styles */
+  padding-left: 0; /* Remove default left padding */
+}
 
+/* Style the <li> elements within the specific <ul> */
+.custom-list li {
+  color: gray; /* Set the text color to gray */
+  margin-bottom: 0px; /* Add some spacing between list items */
+}
+
+/* Add a custom marker (hyphen) to the <li> elements */
+.custom-list li::before {
+  content: "- "; /* Use a hyphen as the marker */
+}
 .btn-check[disabled] + .btn, .btn-check:disabled + .btn {
   pointer-events: none;
   -webkit-filter: none;
@@ -4477,9 +4504,9 @@ fieldset:disabled .btn {
     left: auto;
   }
   
-#support-area-bg{
+/* #support-area-bg{
   height:85% !important;
-}
+} */
 }
 
 @media (min-width: 1600px) {
@@ -4497,9 +4524,9 @@ fieldset:disabled .btn {
     right: 0;
     left: auto;
   }
-  #support-area-bg{
+  /* #support-area-bg{
   height:57% !important;
-}
+} */
 }
 
 .dropup .dropdown-menu[data-bs-popper] {
@@ -5280,9 +5307,9 @@ fieldset:disabled .btn {
   .navbar-expand-xxl .navbar-toggler {
     display: none;
   }
-  #support-area-bg{
+  /* #support-area-bg{
     height:10vh !important;
-  }
+  } */
 }
 
 .navbar-expand {
@@ -6276,7 +6303,7 @@ fieldset:disabled .btn {
 
 @media (min-width: 992px) {
   #support-area-bg{
-    height:85% !important;
+    height: 580px !important;
   }
   .list-group-horizontal-lg {
     -webkit-box-orient: horizontal;
@@ -6844,6 +6871,12 @@ fieldset:disabled .btn {
 }
 
 @media (max-width: 575.98px) {
+  /* #support-area-bg{
+    height: 100% !important;
+  } */
+  .display-5 {
+    font-size: 1.9rem !important;
+  }
   .modal-fullscreen-sm-down {
     width: 100vw;
     max-width: none;
@@ -6867,6 +6900,7 @@ fieldset:disabled .btn {
 }
 
 @media (max-width: 767.98px) {
+  
   .modal-fullscreen-md-down {
     width: 100vw;
     max-width: none;
@@ -6886,6 +6920,18 @@ fieldset:disabled .btn {
   }
   .modal-fullscreen-md-down .modal-footer {
     border-radius: 0;
+  }
+}
+/* @media (max-width: 975px) {
+    #support-area-bg {
+      height: 100% !important;
+      min-width: 767.98px;
+    }
+} */
+
+@media (min-width: 975px) {
+  .display-5 {
+    font-size: 2.5rem !important;
   }
 }
 
@@ -6911,7 +6957,36 @@ fieldset:disabled .btn {
     border-radius: 0;
   }
 }
-
+@media (min-width: 1160px) {
+  
+  .display-5 {
+    font-size: 2.5rem !important;
+  }
+}
+@media (min-width: 1185px) {
+  /* #support-area-bg{
+    height: min(95%, 1200px) !important;
+  } */
+  /* .display-5 {
+    font-size: 2.6rem !important;
+  } */
+}
+@media (min-width: 1200px) {
+  #support-area-bg{
+    height: 530px !important;
+  }
+  .display-5 {
+    font-size: 3rem !important;
+  }
+}
+@media (min-width: 1300px) {
+  #support-area-bg{
+    height: 530px !important;
+  }
+  .display-5 {
+    font-size: 3rem !important;
+  }
+}
 @media (max-width: 1199.98px) {
   .modal-fullscreen-xl-down {
     width: 100vw;
@@ -17851,7 +17926,7 @@ a:hover {
 /*    11. Component - Breadcrumb
 /*----------------------------------------*/
 .breadcrumbs-area {
-  padding: 100px 0;
+  padding: 60px 0;
   background: #E9ECEF;
 }
 
@@ -17929,8 +18004,8 @@ a:hover {
 
 .single-footer-widget .widget-title {
   position: relative;
-  padding-bottom: 10px;
-  margin-bottom: 25px;
+  /* padding-bottom: 10px; */
+  /* margin-bottom: 25px; */
   font-size: 18px;
   text-transform: uppercase;
   color: #212121;
@@ -17938,7 +18013,7 @@ a:hover {
   font-weight: 700;
 }
 
-.single-footer-widget .widget-title:after {
+/* .single-footer-widget .widget-title:after {
   content: "";
   color: #122179;
   background: #122179;
@@ -17947,9 +18022,9 @@ a:hover {
   position: absolute;
   bottom: 0;
   left: 0px;
-}
+} */
 
-.single-footer-widget .widget-title:before {
+/* .single-footer-widget .widget-title:before {
   content: "";
   background: #212121;
   color: #212121;
@@ -17958,7 +18033,7 @@ a:hover {
   width: 40px;
   height: 1px;
   position: absolute;
-}
+} */
 
 .single-footer-widget .widget-list li {
   margin-bottom: 15px;
@@ -18053,7 +18128,7 @@ a:hover {
 }
 
 .marketing-about-thumb:before {
-  background-color: rgba(0, 0, 0, 0.6);
+  /* background-color: rgba(0, 0, 0, 0.6); Remove the gray bg */
   content: "";
   position: absolute;
   left: 0;
