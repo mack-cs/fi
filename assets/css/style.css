@@ -661,7 +661,7 @@ progress {
 
 /* Market Styles I Added Start Here */
 #support-area-bg{
-  height:900px !important;
+  /* height:900px !important; */
   background-image:url('../images/market/bg.jpg');
   background-size:cover;
 }
@@ -15551,12 +15551,12 @@ a {
   transition: all 0.3s ease 0s;
 }
 
-a:hover {
+/* a:hover {
   color: #122179;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-}
+} */
 
 /*----------------------------------------*/
 /*    03. Base - Helper 
@@ -17665,8 +17665,24 @@ a:hover {
   }
 }
 
+#single-footer-widget-straight ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#single-footer-widget-straight li {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+#single-footer-widget-straight a {
+  text-decoration: none;
+}
+
 /*-- Slider Animation --*/
-.slider-content > * {
+/* .slider-content > * {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -17701,7 +17717,7 @@ a:hover {
           animation-delay: 1.6s;
   -webkit-animation-name: fadeInUp;
           animation-name: fadeInUp;
-}
+} */
 
 /*-- Video Home Animation --*/
 /*----------------------------------------*/
@@ -18244,21 +18260,21 @@ a:hover {
   z-index: 2;
 }
 
-.single-blog-post-wrap .blog-thumbnail a:hover:before {
+/* .single-blog-post-wrap .blog-thumbnail a:hover:before {
   -webkit-transform: scaleX(1);
       -ms-transform: scaleX(1);
           transform: scaleX(1);
   opacity: 1;
   visibility: visible;
-}
+} */
 
-.single-blog-post-wrap:hover .blog-thumbnail .btn-plus {
+/* .single-blog-post-wrap:hover .blog-thumbnail .btn-plus {
   height: 40px;
   width: 40px;
   -webkit-transform: translate(-50%, -50%) scale(1);
       -ms-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-}
+} */
 
 .single-blog-post-wrap .blog-post-details .title {
   font-weight: 700;
